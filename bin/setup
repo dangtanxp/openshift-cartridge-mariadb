@@ -4,8 +4,8 @@ mkdir -p $OPENSHIFT_MARIADB_DIR/{log,pid,socket,data,run}
 
 cp conf/my.cnf.erb conf/my.cnf.erb.hidden
 
-mkdir mariadbrepo
-cd mariadbrepo
+mkdir /tmp/mariadbrepo
+cd /tmp/mariadbrepo
 
 wget mirror.edatel.net.co/mariadb/mariadb-10.0.21/bintar-linux-x86_64/mariadb-10.0.21-linux-x86_64.tar.gz
 gunzip mariadb-10.0.21-linux-x86_64.tar.gz
@@ -18,8 +18,8 @@ tar xvf  scaledb-0.2.5.tar
 rm scaledb-0.2.5.tar
 
 
-mkdir scaledb
-cd scaledb
+mkdir /tmp/scaledb
+cd /tmp/scaledb
 mkdir data
 mkdir logs
 mkdir data/CAS1
