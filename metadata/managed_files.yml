@@ -1,10 +1,8 @@
 ---
 snapshot_exclusions:
-- mariadb/*
 locked_files:
 - bin/
 - bin/*
-- bin/setup/*
 - env/*
 - metadata/
 - metadata/*
