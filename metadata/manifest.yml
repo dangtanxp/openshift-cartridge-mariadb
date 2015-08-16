@@ -1,4 +1,4 @@
-Name: scaled-bmariadb
+Name: mariadb
 Cartridge-Short-Name: MARIADB
 Architecture: noarch1
 -Display-Name: MariaDB 10.0.21
