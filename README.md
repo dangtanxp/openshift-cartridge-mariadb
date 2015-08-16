@@ -1,0 +1,9 @@
+# OpenShift MariaDB Cartridge
+This cartridge is documented in the [Cartridge Guide](http://openshift.github.io/documentation/oo_cartridge_guide.html#mariadb).
+
+### Installation
+```BASH
+rhc cartridge add -a myapp https://reflector-getupcloud.getup.io/reflect?github=dangtanxp/openshift-cartridge-mariadb
+```
+This cartridge was extracted from the OpenShift Origin repository here: https://github.com/openshift/origin-server and can be installed
+as a downloadable cartridge.  It exposes both OPENSHIFT_MARIADB and OPENSHIFT_MYSQL environment variables for compatibility.

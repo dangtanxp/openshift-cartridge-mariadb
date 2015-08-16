@@ -1,0 +1,11 @@
+#!/bin/bash -e
+
+source $OPENSHIFT_CARTRIDGE_SDK_BASH
+
+dbname=$OPENSHIFT_APP_NAME
+socket_file=$OPENSHIFT_MARIADB_DB_SOCKET
+username=$OPENSHIFT_MARIADB_DB_USERNAME
+password=$OPENSHIFT_MARIADB_DB_PASSWORD
+
+# TODO: Should be we running mysql_secure_installation
+##echo "GRANT ALL ON *.* to root@'%'; flush privileges;" | ${OPENSHIFT_MARIADB_DIR}/mariadbrepo/mariadb-10.0.21-linux-x86_64/bin/mysql -uroot > /dev/null || error "Failed to setup initial root user" 187
